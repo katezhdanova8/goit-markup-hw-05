@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "gulp": "gulp watch"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-file-include": "^2.3.0"
+  }
+}
