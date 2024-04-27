@@ -76,8 +76,8 @@ ul {
 }
 
 .container {
-  max-width: 1128px;
-  width: 98%;
+  max-width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -439,6 +439,13 @@ ul {
   color: var(--light-slate);
   border: 1px solid var(--light-slate);
   border-radius: var(--border-radius-md);
+  transition: color var(--transition-duration) var(--transition-effect),
+    border-color var(--transition-duration) var(--transition-effect);
+}
+
+.customers a:hover {
+  border-color: var(--ocean);
+  color: var(--ocean);
 }
 
 /* PORTFOLIO PAGE */
@@ -579,6 +586,19 @@ ul {
   background-color: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: var(--border-radius-rd);
+  transition: background-color var(--transition-duration)
+      var(--transition-effect),
+    color var(--transition-duration) var(--transition-effect),
+    border-color var(--transition-duration) var(--transition-effect);
+  outline: none;
+}
+
+.modal__close:active,
+.modal__close:focus,
+.modal__close:hover {
+  background-color: var(--ocean);
+  border-color: var(--ocean);
+  color: var(--white);
 }
 
 .modal.is-hidden {
